@@ -1,0 +1,223 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olympic Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #f3f4f6, #cfd8dc);
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .time-sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .time-section {
+      flex: 1 1 calc(20% - 10px); /* Adjust width for 5 items */
+      min-width: 120px; /* Ensure each section has a minimum width */
+      background: #ecf0f1;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .time-section h2 {
+      font-size: 1.2em;
+      color: #34495e;
+      margin-bottom: 10px;
+    }
+
+    .time-section p {
+      font-size: 1em;
+      color: #2c3e50;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #7f8c8d;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Olympic Timer</h1>
+  <div class="container">
+    <h2>Event Date: Fri, 14 Jul, 2028</h2>
+    <div class="time-sections">
+      <div class="time-section">
+        <h2>Live Time</h2>
+        <p id="roots"></p>
+      </div>
+      <div class="time-section">
+        <h2>Month</h2>
+        <p id="month"></p>
+      </div>
+      <div class="time-section">
+        <h2>Week</h2>
+        <p id="week"></p>
+      </div>
+      <div class="time-section">
+        <h2>Days</h2>
+        <p id="days"></p>
+      </div>
+      <div class="time-section">
+        <h2>Minutes</h2>
+        <p id="minutes"></p>
+      </div>
+      <div class="time-section">
+        <h2>Seconds</h2>
+        <p id="seconds"></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+
+    <input id="first" type="number" placeholder="Enter Number 1">
+    <input id="second" type="number" placeholder="Enter Number 2>
+    <button></button>
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <div class="footer">Created with ❤️ for live time tracking.</div>
+  <script src="script.js"></script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .calculator {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+    .calculator input {
+      width: calc(100% - 20px);
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    .calculator button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      color: #fff;
+      background: #007bff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .calculator button:hover {
+      background: #0056b3;
+    }
+    .calculator #result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+    .calculator .digits {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .calculator .digit-button {
+      padding: 10px;
+      font-size: 18px;
+      color: #fff;
+      background: #28a745;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .calculator .digit-button:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input id="sum1" type="number" placeholder="Enter Your Number">
+    <input id="sum2" type="number" placeholder="Enter Your Number">
+    <div id="result">Result will appear here</div>
+    <button id="btnsum">Add</button>
+    <button id="Substration">Subtract</button>
+    <button id="Mulitiple">Multiply</button>
+    <button id="Division">Divide</button>
+    <div class="digits">
+      <button id="btn1" class="digit-button">1</button>
+      <button id="btn2"class="digit-button">2</button>
+      <button id="btn3" class="digit-button">3</button>
+      <button id="btn4" class="digit-button">4</button>
+      <button id="btn5" class="digit-button">5</button>
+      <button id="btn6" class="digit-button">6</button>
+      <button  id="btn7" class="digit-button">7</button>
+      <button id="btn8" class="digit-button">8</button>
+      <button id="btn9" class="digit-button">9</button>
+      <button id="btn0" class="digit-button">0</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
